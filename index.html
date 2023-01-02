@@ -11,7 +11,7 @@
 <body>
     <header>
         <article>
-            <div id="burger_menu">
+            <label id="burger_menu" for="hide_sidebar">
                 <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
                     style="pointer-events: none; display: block; width: 100%; height: 100%;"
                     class="style-scope yt-icon size-l">
@@ -21,7 +21,7 @@
                     </g>
                 </svg><!--css-build:shady-->
 
-            </div>
+            </label>
             <div id="site_logo">
                 <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" focusable="false"
                     style="pointer-events: none; display: block; width: 100%; height: 100%;"
@@ -123,6 +123,7 @@
     </header>
 
     <section>
+        <input type="checkbox" hidden checked id="hide_sidebar">
         <article id="sidebar">
             <div>
                 <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"

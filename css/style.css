@@ -117,10 +117,12 @@ section {
     display: grid;
     grid-template-columns: 250px auto;
     padding: .8em;
+    position: relative;
 }
 
 section article#sidebar {
     overflow-y: scroll;
+    transition: 0.5s;
 }
 
 section article#sidebar svg {
@@ -193,4 +195,37 @@ article#page_content .video_placeholder .video_duration {
 .videos_gallery_item .views_times {
     font-size: .9em;
     color: gray;
+}
+
+@media screen and (max-width: 544px) {
+    section {
+        display: grid;
+        grid-template-columns: 0px auto;
+        padding: .8em;
+    }
+
+    #hide_sidebar:checked+#sidebar {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        left: 0px;
+        background-color: black;
+        max-height: 90vh;
+    }
+
+    #microphone {
+        display: none;
+    }
+
+    #search input {
+        width: 300px;
+        padding: .4em 1em;
+        font-size: 1.1em;
+        outline: none;
+        background-color: black;
+        border: 0;
+        color: gray;
+        display: none;
+    }
+
 }
