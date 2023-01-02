@@ -5,6 +5,8 @@ body {
     color: white;
     font-family: "Roboto", "Arial", 'FreeSans', sans-serif;
     font-size: 16px;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
 }
 
 svg {
@@ -101,6 +103,10 @@ section {
     padding: .8em;
 }
 
+section article#sidebar {
+    overflow-y: scroll;
+}
+
 section article#sidebar svg {
     width: 1.5rem;
 }
@@ -110,4 +116,64 @@ section article#sidebar>div {
     flex-direction: row;
     gap: 1.5rem;
     padding: .5rem;
+}
+
+section article#page_content {
+    overflow-y: scroll;
+}
+
+article#page_content #videos_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+
+article#page_content .videos_gallery_item {
+    cursor: pointer;
+}
+
+article#page_content .video_placeholder {
+    position: relative;
+}
+
+article#page_content .video_placeholder img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+article#page_content .video_placeholder .video_duration {
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+    background-color: rgba(50, 50, 50, 0.855);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.videos_gallery_item .videos_details {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: .6em;
+}
+
+.videos_gallery_item .chaine_picture img {
+    width: 30px;
+}
+
+.videos_gallery_item .chaine_picture img {
+    width: 30px;
+}
+
+.videos_gallery_item .videos_title {
+    font-weight: bold;
+}
+
+.videos_gallery_item .chaine_name,
+.videos_gallery_item .views_times {
+    font-size: .9em;
+    color: gray;
 }
