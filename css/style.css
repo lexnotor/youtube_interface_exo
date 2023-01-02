@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", "Arial", 'FreeSans', sans-serif;
+    font-size: 16px;
+}
+
+svg {
+    fill: white;
+}
+
+hr {
+    border: .5px solid hsla(0, 0%, 100%, 0.08);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+#burger_menu {
+    width: 30px;
+}
+
+#site_logo {
+    width: 100px;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid hsla(0, 0%, 100%, 0.08);
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: hsla(0, 0%, 100%, 0.08);
+}
+
+#search input {
+    width: 500px;
+    padding: .4em 1em;
+    font-size: 1.1em;
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: gray;
+}
+
+#search #search_btn {
+    width: 70px;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+}
+
+#search #search_btn svg {
+    width: 30px;
+    vertical-align: middle;
+}
+
+#microphone {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.08);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#microphone svg {
+    width: 30px;
+    vertical-align: middle;
+}
+
+#new_videos_btn,
+#notification_bell {
+    width: 1.5em;
+}
+
+#user_avatar {
+    width: 40px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 250px auto;
+    padding: .8em;
+}
+
+section article#sidebar svg {
+    width: 1.5rem;
+}
+
+section article#sidebar>div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: .5rem;
+}
