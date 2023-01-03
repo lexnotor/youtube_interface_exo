@@ -1,13 +1,14 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
-    color: white;
-    font-family: "Roboto", "Arial", 'FreeSans', sans-serif;
+    color: black;
+    background-color: white;
+    font-family: "Roboto", "Arial", "FreeSans", sans-serif;
     font-size: 16px;
     display: grid;
     grid-template-rows: 10vh 90vh;
 }
+
 
 ::-webkit-scrollbar {
     width: 1em;
@@ -26,7 +27,7 @@ body {
 }
 
 svg {
-    fill: white;
+    fill: black;
 }
 
 hr {
@@ -61,10 +62,10 @@ header article {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid hsla(0, 0%, 100%, 0.08);
+    border: 1px solid hsla(0, 1%, 38%, 0.342);
     border-radius: 1em;
     overflow: hidden;
-    background-color: hsla(0, 0%, 100%, 0.08);
+    background-color: hsla(0, 1%, 38%, 0.342);
 }
 
 #search input {
@@ -72,7 +73,7 @@ header article {
     padding: .4em 1em;
     font-size: 1.1em;
     outline: none;
-    background-color: black;
+    background-color: white;
     border: 0;
     color: gray;
 }
