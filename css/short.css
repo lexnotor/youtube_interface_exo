@@ -183,7 +183,7 @@ article#page_content .video_placeholder .video_duration {
     
 }
 .elements{
-    width: 400px;
+    width: 380px;
     background-color: rgba(212, 212, 228, 0);
     display: grid;
     grid-template-columns: 30% 30% 20% 10% 10%;
@@ -238,5 +238,37 @@ article#page_content .video_placeholder .video_duration {
 #spanShort:hover{
       background-color: rgba(220, 220, 220, 0.795);
       color: black;
+}
+@media screen and (max-width: 544px) {
+    section {
+        display: grid;
+        grid-template-columns: 0px auto;
+        padding: .8em;
+    }
+
+    #hide_sidebar:checked+#sidebar {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        left: 0px;
+        background-color: black;
+        max-height: 90vh;
+    }
+
+    #microphone {
+        display: none;
+    }
+
+    #search input {
+        width: 300px;
+        padding: .4em 1em;
+        font-size: 1.1em;
+        outline: none;
+        background-color: black;
+        border: 0;
+        color: gray;
+        display: none;
+    }
+
 }
 
