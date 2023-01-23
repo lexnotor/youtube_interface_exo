@@ -150,6 +150,7 @@ article#page_content #videos_gallery {
 
 article#page_content .videos_gallery_item {
     cursor: pointer;
+    color:inherit
 }
 
 article#page_content .video_placeholder {
