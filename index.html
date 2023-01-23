@@ -67,7 +67,7 @@
 
         <article>
             <div id="search">
-                <input type="text" placeholder="Recherche">
+                <input type="text" placeholder="Recherche" id="nom">
                 <div id="search_btn">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
                         style="pointer-events: none;" class="style-scope yt-icon">
@@ -439,12 +439,13 @@
 
             </div>
             <div id="videos_gallery">
-                <div class="videos_gallery_item" onclick="window.location.pathname='/pages/watch.html'">
-                    <div class="video_placeholder">
+                <!-- <div class="videos_gallery_item" onclick="window.location.pathname='/pages/watch.html'"> -->
+                    <!-- <div class="video_placeholder">
                         <img src="./images/vid_placeholder.webp" alt="">
                         <div class="video_duration">2:13</div>
-                    </div>
-                    <div class="videos_details">
+                    </div> -->
+                    <!-- <iframe id="player" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+                    <!-- <div class="videos_details">
                         <div class="chaine_picture">
                             <img src="./images/avatar.png" alt="">
                         </div>
@@ -614,10 +615,13 @@
                             <div class="views_times">4M vues · il y a 4 mois</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+            </div>
+            <div id="result">
+
             </div>
         </article>
     </section>
 </body>
-
+<script src="./js/script.js"></script>
 </html>
